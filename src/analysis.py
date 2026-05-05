@@ -17,3 +17,18 @@ def get_country_data(country1,country2,year,df):
     filtered_result = df[(df["year"] == year) & (df["country"].isin([country1,country2]))]
     
     return filtered_result
+
+def get_country_trends(country,df):
+    """
+    compares a metric from the selected country across years 2015-2019
+
+    Args:
+        country : selected country
+        df : panda dataframe of all metrics of selected country 
+    returns : filtered country with all metrics 
+    """
+    
+    
+    filtered_result = df[df["country"] == country]
+    return filtered_result
+    
