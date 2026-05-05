@@ -12,7 +12,7 @@ country1 = st.selectbox("Select country 1: ", df["country"].unique())
 country2 = st.selectbox("Select country 2: ", df["country"].unique())
 
 
-metric_selector = st.selectbox("Select Metric", ["life_ladder","gdp_per_capita","social_support","health","freedom","generosity","government Trust (corruption)"])
+metric_selector = st.selectbox("Select Metric", ["life_ladder","gdp_per_capita","social_support","health","freedom","generosity","corruption"])
 compared_countries = get_country_data(country1,country2,year,df)
 
 
